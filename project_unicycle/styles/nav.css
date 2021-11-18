@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+  font-family: "Booter - Zero Zero";
+  src: url("Fonts/Booter\ -\ Zero\ Zero.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  color: #777;
+}
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+.logoimg {
+  width: 120px;
+  height: 100px;
+  align-items: center;
+}
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  font-family: Raleway;
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: filter 0.4s ease-in-out;
+}
+
+.main-nav .current {
+  background-color: darkslategrey;
+}
+
+.nav a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  border-radius: 3rem;
+  transform: scale(1.05);
+  will-change: transform;
+  transition: 0.2s;
+  transform: ease-out;
+  z-index: -1;
+}
+.nav a:hover::after {
+  transform: translate(0, 0);
+}
+.main-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-color: lightslategray;
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.unicycle-name {
+  text-align: center;
+  margin: 0;
+  font-size: 3em;
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+  animation-name: test;
+  animation-duration: 5s;
+}
+@keyframes test {
+  0% {
+    color: blue;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: green;
+  }
+}
+.main-footer {
+  background-color: lightslategray;
+  color: white;
+  padding: 0.25em 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.main-footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.footer-nav li {
+  padding: 0 0.5em;
+}
+
+.footer-nav img {
+  width: 30px;
+  height: 30px;
+}

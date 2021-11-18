@@ -1,0 +1,27 @@
+body {
+  background-image: url(../images/Extreme-3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery {
+  margin-top: 200px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: auto auto auto;
+}
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
+}
